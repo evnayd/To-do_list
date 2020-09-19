@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="main.css" type="text/css">
+      <title>To-do list</title>
+   </head>
+   <body onload="setFocus()">
+       <main>
+         <div class="popup visually-hidden">
+            <div class="popup__box box">
+              <p class="box__text">Good job!</p>
+              <button class="box__close" tabindex="5">Close</button>
+            </div>
+           </div>
+          <div class="container">
+          <div class="header">
+          <h1 class="header__title">My to-do list</h1>
+          <div class="form">
+          <input class="form__input" type="text" placeholder="Write your task" required tabindex="0">
+          <div class="buttons">
+            <button class="buttons__item add" tabindex="1">Add</button>
+            <button class="buttons__item clear" tabindex="2">Clear</button>
+        </div>
+        </div>
+          </div>
+          <ul class="list">
+          </ul>
+          <button class="finish opacity" tabindex="4">Done!</button>
+          </div>
+          
+       </main>
+       <script src="js/script.js"></script>
+    </body>
